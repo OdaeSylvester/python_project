@@ -159,6 +159,9 @@ def trip_duration_stats(df):
     # display earliest travel times
     earliest_time = sorted(df.groupby(df['Trip Duration'])['Trip Duration'])[0][0]
     print("\n The earliest time traveled is:", earliest_time)
+    # display last travel time
+    last_time = sorted(df.groupby(df['Trip Duration'])['Trip Duration'], reverse= True)[0][0]
+    print("\n The last time traveled is:", last_time)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
