@@ -10,3 +10,6 @@ https://www.kite.com/python/answers/how-to-convert-between-month-name-and-month-
 
 Resource from Github
 Oumkale (Github)
+
+Git Tutorials
+Richard Kalechoff
