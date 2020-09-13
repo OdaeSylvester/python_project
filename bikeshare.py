@@ -1,3 +1,4 @@
+# TO DO: get user to import packages to be used for the analysis
 import time
 import datetime
 import pandas as pd
@@ -155,6 +156,7 @@ def trip_duration_stats(df):
     print('The total travel time is: {}'.format(total_travel_time))
     # TO DO: display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
+
     print('\nThe mean travel time is: {}'.format(mean_travel_time))
     # display earliest travel times
     earliest_time = sorted(df.groupby(df['Trip Duration'])['Trip Duration'])[0][0]
